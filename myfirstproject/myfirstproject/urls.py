@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', views.dauletsuper),
     path('', views.home),
-    path('reverse/', views.button)
+    path('reversed/', views.button, name='reverse')
 ]
