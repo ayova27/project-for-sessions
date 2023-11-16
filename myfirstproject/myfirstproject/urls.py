@@ -21,5 +21,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', views.dauletsuper),
-    path('', views.home)
+    path('', views.home),
+    path('reverse/', views.button)
 ]

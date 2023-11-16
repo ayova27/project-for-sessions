@@ -8,3 +8,7 @@ def dauletsuper(request):
 
 def home(request):
     return render(request, 'index.html', {'greeting': 'Hello!'})
+
+
+def button(request):
+    return render(request, 'reverse.html')
