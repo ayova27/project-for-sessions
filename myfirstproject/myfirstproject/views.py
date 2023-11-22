@@ -14,4 +14,5 @@ def button(request):
     user_input = request.GET['user_input']
     lists = [x for x in user_input.split()]
     count = len(lists)
+    user_input = user_input[::-1]
     return render(request, 'reverse.html', {'user_text': user_input, 'word': count})
